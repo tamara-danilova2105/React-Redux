@@ -1,38 +1,218 @@
-.App {
+body {
+  background-color: #161616;
+  font-family: 'Comfortaa', cursive;
+}
+
+h1{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  margin-bottom: -15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.block {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.658);
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
+.fixed {
+  position: fixed;
+  margin-right: 50%;
   min-height: 100vh;
+  width: 500px;
+}
+
+.left {
+  margin-left: 40%;
+}
+
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.dish {
+  width: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.filterBtn-block {
+  display: flex;
+}
+
+.filterBtn {
+  font-family: 'Comfortaa', cursive;
+  width: 90px;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #d876a0;
+}
+
+.filterBtn:hover {
+  background-color: #ffd12de8
+}
+
+.filterBtnSelected {
+  font-family: 'Comfortaa', cursive;
+  width: 90px;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ffd12de8
+}
+
+.namePrice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartItem {
+  display: flex;
+}
+
+.nameOder {
+  width: 350px;
+  text-align: start;
+}
+
+.quantityOder, .sumOder {
+  width: 100px;
+  text-align: start;
+}
+
+.price {
+  color: #cf3477e1;
+  text-shadow: 2px 1px #161616;
+}
+
+.totalPrice {
+  display: flex;
+  justify-content: end;
+  margin-top: 45px;
+}
+
+.totalTitle {
+  width: 250px;
+}
+
+.totalSum {
+  width: 100px;
+}
+
+.quantity {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.quantityBtn {
+  background-color: #d876a0;
+  font-size: 25px;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.quantityCart {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.cartBtn {
+  font-family: 'Comfortaa', cursive;
+  width: 130px;
+  padding: 5px;
+  font-size: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #ffd12de8;
+  margin-left: 20px;
+}
+
+.deleteIcon {
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+
+@media all and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .fixed {
+    position: relative;
+    margin-right: 0px;
+    min-height: max-content;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .left {
+    margin-left: 0px;
+    width: 80%;
+  }
+
+  .filterBtn-block {
+    display: flex;
+    justify-content: center;
+  }
+
+  .namePrice, .quantityCart {
+    margin-left: 45px;
+    margin-right: 45px;
   }
 }
+
+@media all and (max-width: 500px) {
+  .fixed, .left {
+    width: 90%;
+  }
+
+  .dish {
+    width: 100%;
+  }
+
+  .namePrice, .quantityCart {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3, button {
+    font-size: 15px;
+  }
+
+  .filterBtn-block {
+    flex-wrap: wrap;
+    margin: 1px 5px;
+  }
+
+  .nameOder {
+    width: 330px;
+  }
+}
+
