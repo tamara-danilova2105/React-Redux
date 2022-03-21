@@ -10,11 +10,11 @@ const CartItem = ({cartItem}) => {
 
     return(
         <div className="cartItem">
-            <img onClick={() => dispatch(removeItemFromCart({cartItemsId: cartItem.id}))} 
-            className="deleteIcon" src={deleteIcon} width='25px' height='25px' alt="удалить"/>
             <h3 className="nameOder">{dishes.name}</h3>
             <h3 className="quantityOder">{cartItem.quantity} шт.</h3>
             <h3 className="sumOder">{dishes.price * cartItem.quantity} ₽ </h3>
+            <img onClick={() => dispatch(removeItemFromCart({cartItemsId: cartItem.id}))}
+            className="deleteIcon" src={deleteIcon} width='25px' height='25px' alt="удалить"/>
         </div>
     )
 }

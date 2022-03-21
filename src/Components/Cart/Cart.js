@@ -8,7 +8,6 @@ const Cart = () => {
 
     const cartItems = useSelector(getCartItems)
     const totalPrice = useSelector(getTotalPrice)
-    console.log(cartItems);
 
     return(
         <div>
