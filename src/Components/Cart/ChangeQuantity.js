@@ -1,10 +1,5 @@
 const ChangeQuantity = ({quantity, setQuantity}) => {
     
-    const addQuantity = () => {
-        const newQuantity = quantity + 1
-        setQuantity(newQuantity)
-    }
-
     const removeQuantity = () => {
         if(quantity < 2) return
         const newQuantity = quantity - 1
@@ -15,7 +10,7 @@ const ChangeQuantity = ({quantity, setQuantity}) => {
         <div>
             <button className="quantityBtn" onClick={removeQuantity}>-</button>
             <span className="quantity">{quantity} шт.</span>
-            <button className="quantityBtn" onClick={addQuantity}>+</button>
+            <button className="quantityBtn" onClick={() => setQuantity(quantity + 1)}>+</button>
         </div>
     )
 }
