@@ -5,6 +5,7 @@ import Dish from "./Dish"
 
 const Dishes = () => {
     const selectedCategory = useSelector(getSelectedCategory)
+    
     return(
         <div>
             {dishesData

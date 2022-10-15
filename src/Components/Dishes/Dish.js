@@ -28,10 +28,13 @@ const Dish = ({ dish }) => {
 
             <div className="quantityCart">
                 <ChangeQuantity
-                quantity={quantity}
-                setQuantity={setQuantity}/>
-                <button onClick={handleBuy} 
-                className="cartBtn">в корзину</button>
+                    quantity={quantity}
+                    setQuantity={setQuantity}
+                />
+                <button 
+                    onClick={handleBuy} 
+                    className="cartBtn">в корзину
+                </button>
             </div>
         </div>
     )

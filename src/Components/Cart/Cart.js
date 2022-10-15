@@ -3,6 +3,8 @@ import { getCartItems, getTotalPrice } from '../../redux/cartSlice'
 import cart from './cart.png'
 import wallet from './wallet.png'
 import CartItem from './CartItem'
+// import StripeContainer from '../../Stripe/StripeContainer'
+
 
 const Cart = () => {
 
@@ -18,6 +20,8 @@ const Cart = () => {
                 <h2 className='totalTitle'>ИТОГО К ОПЛАТЕ:</h2>
                 <h2 className="totalSum price"> {totalPrice} ₽</h2>
             </div>
+            {/* //оплата корзины Stripe
+            <StripeContainer totalPrice={totalPrice} /> */}
         </div>
     )
 }
