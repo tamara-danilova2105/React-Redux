@@ -33,7 +33,9 @@ const Dish = ({ dish }) => {
                 />
                 <button 
                     onClick={handleBuy} 
-                    className="cartBtn">в корзину
+                    className="cartBtn"
+                >
+                    в корзину
                 </button>
             </div>
         </div>
